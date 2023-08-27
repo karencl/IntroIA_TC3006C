@@ -15,7 +15,7 @@ Especificaciones:
 ## Especificaciones de uso del dataset para el entrenaimiento
 Hice un shuffle del dataset antes de normalizar los datos de entrada. Una vez hecho esto, dividí el dataset para tener mis listas de entrenamiento y prueba, en X y Y. 
 
-Para el entrenamiento dejé 9000 datos y para las predicciones 568.
+Para el entrenamiento dejé 8000 datos y para las predicciones 1568.
 
 ## Observaciones de los resultados
 
