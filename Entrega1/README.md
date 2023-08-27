@@ -18,3 +18,9 @@ Hice un shuffle del dataset antes de normalizar los datos de entrada. Una vez he
 Para el entrenamiento dejé 9000 datos y para las predicciones 568.
 
 ## Observaciones de los resultados
+
+- **Gráfica de comparación de los costos entre los datos de entrenamiento y los de prueba:** En esta gráfica se puede observar que no hay una gran diferencia entre ambos costos, por lo que podemos deducir que no hay overfitting en el modelo. Cabe aclarar que la línea naranja (los costos de los datos de prueba), sale más pequeña debido al tamaño de ese arreglo, a comparación del tamaño de los datos de entrenamiento.
+
+- **Gráficas de comparación entre la hipótesis y valores reales de Y (estas son del entrenamiento):** En estas dos gráficas se puede observar que hay una gran cantidad de datos (8000 en total) y podemos ver como es que los valores reales de la salida, se relacionan con una de las columnas de entrada. En éstas se muestra como mi modelo busca crear una línea en diagonal (la regresión lineal), para abarcar la mayoría de los datos reales.
+
+- **Gráficas de comparación entre las predicciones y valores reales de Y (estas son de las pruebas):** En estas otras dos gráficas se puede observar una cantidad menor de datos (1568 en total) y de igual forma podemos ver como es que los valores reales de la salida, se relacionan con una de las columnas de entrada. En éstas dos a comparación de las anteriores, se ve como es que las predicciones de Y (ya con los parámetros obtenidos del entrenamiento), van encajando mejor con los valores reales de la salida.
