@@ -11,8 +11,6 @@ A01704254
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.decomposition import PCA
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 
@@ -170,8 +168,8 @@ if __name__ == '__main__':
 
   # Comparación entre modelos
   # MSE
-  mean_squared_error(y_test, pred_y)
-  final_cost_nf
+  print("MSE - modelo con framework: " + str(mean_squared_error(y_test, pred_y)))
+  print("MSE - modelo sin framework: " + str(final_cost_nf))
   
   # Gráficas
   toPlot(x_test[:, [4]], pred_y, y_test, ["Predictions", "Real values"], 
