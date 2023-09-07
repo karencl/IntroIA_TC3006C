@@ -19,6 +19,8 @@ Hice un shuffle del dataset antes de normalizar los datos de entrada. Una vez he
 
 Para el entrenamiento dejé 8000 datos y para las predicciones 1568.
 
+A ambos modelos les paso los mismos set de datos (los de *train* para entrenar el modelo y luego el de *test* para las predicciones), con el fin de poder comparar más adelante sus desempeños.
+
 ## Modelo sin framework
 Este modelo es el modelo creado por mi para mi entrega 1 del módulo 2.
 Para éste desarrollé funciones para normalizar, realizar el algoritmo de gradiente descendiente, hacer predicciones y hacer gráficas de resultados.
@@ -32,7 +34,7 @@ Los parámetros iniciales que pasé para entrenar al modelo fueron:
 ## Modelo con framework
 Este modelo fue creado con la librería de *sklearn*. De esta importé *LinearRegression* para la creación del mismo modelo y *mean_squared_error* para poder visualizar el mse y compararlo con el del modelo sin framework.
 
-
+En este caso, como tal no se pueden modificar los hiperparámetros, ya que la librería de *sklearn* no lo permite para este modelo en específico. Sin embargo, hice varias gráficas y saqué datos como el mse, para poder analizar su desempeño y compararlo con el otro modelo.
 
 ## Desempeño de ambos modelos
-
+![alt text](http://url/to/img.png)
