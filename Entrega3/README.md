@@ -37,4 +37,24 @@ Este modelo fue creado con la librería de *sklearn*. De esta importé *LinearRe
 En este caso, como tal no se pueden modificar los hiperparámetros, ya que la librería de *sklearn* no lo permite para este modelo en específico. Sin embargo, hice varias gráficas y saqué datos como el mse, para poder analizar su desempeño y compararlo con el otro modelo.
 
 ## Desempeño de ambos modelos
-![alt text](http://url/to/img.png)
+Primero que nada, comparemos algunos de las gráficas obtenidas de acuerdo a los valores reales de Y (de acuerdo al subset de entrenamiento) y las predicciones de Y (de acuerdo al subset de prueba), dependiendo de alguna de las entredas.
+
+### Figuras 1 y 2 - Exhaust vacuum
+- **Exhaust vacuum - y_predicted vs y_test - WITH FRAMEWORK:**
+![alt text](https://github.com/karencl/IntroIA_TC3006C/blob/master/Entrega3/Images/Figure_1.png)
+
+- **Exhaust vacuum - y_predicted vs y_test - WITHOUT FRAMEWORK:**
+![alt text](https://github.com/karencl/IntroIA_TC3006C/blob/master/Entrega3/Images/Figure_2.png)
+
+### Figuras 3 y 4 - Relative humidity
+- **Relative humidity - y_predicted vs y_test - WITH FRAMEWORK:** 
+![alt text](https://github.com/karencl/IntroIA_TC3006C/blob/master/Entrega3/Images/Figure_3.png)
+
+- **Relative humidity - y_predicted vs y_test - WITHOUT FRAMEWORK:**
+![alt text](https://github.com/karencl/IntroIA_TC3006C/blob/master/Entrega3/Images/Figure_4.png)
+
+
+Luego, pasemos a ver la diferencia que ambos modelos tienen, de acuerdo a su MSE:
+
+### MSE
+![alt text](https://github.com/karencl/IntroIA_TC3006C/blob/master/Entrega3/Images/Screen%20Shot%202023-09-07%20at%2016.49.53.png)
