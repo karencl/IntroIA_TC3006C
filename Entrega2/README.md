@@ -19,12 +19,19 @@ Para la visualización de los datos, apliqué la técnica de PCAs, para poder vi
 
 ## Observaciones de los resultados
 
-- **Gráfica 1 de los PCAs (grupos reales):** En esta gráfica se puede observar el dataset completo de manera representativa, utilizando la técnica de PCAs. En esta podemos ver cuales son los 3 grupos reales y como los datos se distribuyen entre ellos.
+- **Gráfica 1 de los PCAs (grupos reales):**
+![alt text](https://github.com/karencl/IntroIA_TC3006C/blob/master/Entrega2/Images/Figure_1.png)
 
-- **Gráfica 2 de los PCAs (predicciones):** En esta gráfica también se puede observar el dataset completo de manera representativa, utilizando la técnica de PCA. Sin embargo, la diferencia que tiene ésta con la gráfica pasada, es que podemos ver cuales son los 3 grupos que se predijeron y como los datos que se asignaron a cada uno de ellos se distribuyen.
+En esta gráfica se puede observar el dataset completo de manera representativa, utilizando la técnica de PCAs. En esta podemos ver cuales son los 3 grupos reales y como los datos se distribuyen entre ellos.
+
+- **Gráfica 2 de los PCAs (predicciones):**
+![alt text](https://github.com/karencl/IntroIA_TC3006C/blob/master/Entrega2/Images/Figure_2.png)
+
+En esta gráfica también se puede observar el dataset completo de manera representativa, utilizando la técnica de PCA. Sin embargo, la diferencia que tiene ésta con la gráfica pasada, es que podemos ver cuales son los 3 grupos que se predijeron y como los datos que se asignaron a cada uno de ellos se distribuyen.
 
 Podemos observar que los grupos que se predijeron (junto con los datos que hay en cada uno de ellos), son bastante similares a los grupos reales (y sus datos) mostrados en la gráfica 1 de los PCAs; por lo que se puede decir que el uso del método 'KMeans' cumplió con el objetivo que se buscaba en esta práctica.
 
-- **Gráfica del 'elbow method':** En esta gráfica se pueden observar el resultado obtenido al utilizar la técnica 'elbow method', que sirve para evaluar el número adecuado de clusters que deberían de haber para este dataset.
+- **Gráfica del 'elbow method':**
+![alt text](https://github.com/karencl/IntroIA_TC3006C/blob/master/Entrega2/Images/Figure_3.png)
 
-Como podemos ver, el 'elbow' está prácticamente en 3.
+En esta gráfica se pueden observar el resultado obtenido al utilizar la técnica 'elbow method', que sirve para evaluar el número adecuado de clusters que deberían de haber para este dataset y como podemos ver, el 'elbow' está prácticamente en 3.
