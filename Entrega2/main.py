@@ -20,9 +20,11 @@ def plotPCAs(pca_results, labels, final_title):
     plt.title('K-means Clustering with 2 dimensions' + final_title)
     
 
-def evaluateNumClusters():
+def evaluateNumClusters(inputs):
     """ Función que utiliza 'elbow method' para evaluar el número apropiado de
         clusters que se deben de tener para este dataset
+    Args:
+        inputs (DataFrame) - Dataframe con todas las entradas
     """
     
     kmeans_kwargs = {
@@ -88,6 +90,6 @@ if __name__ == '__main__':
     plotPCAs(results, y, " - PREDICCIONES")
     
     # elbow method
-    evaluateNumClusters()
+    evaluateNumClusters(inputs)
     
     plt.show()
