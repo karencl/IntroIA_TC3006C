@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
+from sklearn.metrics import r2_score
 
 
 def normalize(x, cols):
@@ -148,16 +148,11 @@ if __name__ == '__main__':
   model_nf, train_df, train_costs = gradientDescent(x_train, y_train, epochs, lr)
   _, _, test_costs = gradientDescent(x_test, y_test, epochs, lr)
 
-  print("Final params: " + str(model_nf.T))
-
   # Creación y entrenamiento del modelo con framework
   model_f = LinearRegression(fit_intercept=True)
   model_f
 
   model_f.fit(x_train, y_train)
-
-  model_f.coef_
-  model_f.intercept_
 
   # Predicciones sin framework
   final_cost_nf, fit_df = fitMyModel(model_nf, x_test, y_test)
@@ -165,11 +160,23 @@ if __name__ == '__main__':
   # Predicciones con framework
   pred_y = model_f.predict(x_test)
   pred_y
-
+  
   # Comparación entre modelos
-  # MSE
-  print("MSE - modelo con framework: " + str(mean_squared_error(y_test, pred_y)))
-  print("MSE - modelo sin framework: " + str(final_cost_nf))
+  # Parámetros de ambos modelos
+  print(f'Final params - model without framework: {model_nf.T}')
+  print(f'Final params - model with framework: {model_f.coef_}')
+
+  # modelo con framework - r2
+  aux = model_f.predict(x_train)
+  print(f'r2 - train with framework: {r2_score(y_train, aux)}')
+  print(f'r2 - test with framework: {r2_score(y_test, pred_y)}')
+  
+  # modelo sin framework - costo
+  plt.figure(figsize=(10,5))
+  plt.plot(train_costs)
+  plt.plot(test_costs)
+  plt.legend(["train costs", "test costs"])
+  plt.title("Costo del entrenamiento vs costo de prueba del modelo sin framework")
   
   # Gráficas
   toPlot(x_test[:, [4]], pred_y, y_test, ["Predictions", "Real values"], 
