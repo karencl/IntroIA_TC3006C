@@ -60,12 +60,17 @@ Ahora como una segunda comprobación a la suposición que hice a partir de las d
 Y tal y como podemos ver en ellas, nuevamente las predicciones hechas con el modelo con framework, se acercan mucho más a los valores reales, que aquellas obtenidas con el modelo sin framework.
 
 
-Ahora, para continuar con el análisis de desempeño de ambos modelos, pasemos a ver la diferencia que ambos modelos tienen, de acuerdo con el r2 del modelo con framework y las gráficas de costo del modelo sin framework:
+Ahora, para continuar con el análisis de desempeño de ambos modelos, pasemos a ver la diferencia que ambos modelos tienen, de acuerdo con el r2 del modelo con framework y las gráficas de costo del modelo sin framework.
+***(NOTA: Cabe aclarar que a pesar de que ustilicé técnicas diferentes para hacer el diagnóstico del modelo, con ambos pude obtener la información requerida)***
 
 ### r2 - modelo con framework
-- ![alt text]()
+- ![alt text](https://github.com/karencl/IntroIA_TC3006C/blob/master/Entrega3/Images/Screen%20Shot%202023-09-10%20at%2018.24.20.png)
 
-
+Para el modelo con framework utilicé la r2 para obtener algo similar a lo que sería el 'accuracy'. Como podemos observar, la diferencia entre la r2 de los datos de entrenamiento y la de los de prueba, es mínima. Esto quiere decir que el modelo no tiene overfitting y que tanto la varianza como el bias, son bajos; lo cual hace sentido por la presición de las predicciones que vimos en las gráficas de arriba.
 
 ### costos - modelo sin framework
-- ![alt text]()
+- ![alt text](https://github.com/karencl/IntroIA_TC3006C/blob/master/Entrega3/Images/Figure_5.png)
+
+Y para el modelo sin framework utilicé las gráficas de costo, así como las había puesto en la primera entrega.
+Primero que nada en esta gráfica se puede observar que no hay una gran diferencia entre ambos costos, por lo que podemos deducir que no hay overfitting en el modelo. Cabe aclarar que la línea naranja (los costos de los datos de prueba), sale más pequeña debido al tamaño de ese arreglo, a comparación del tamaño de los datos de entrenamiento. Y luego, podemos ver que por lo mismo de que no hay una gran diferencia, la varianza es baja. Sin embargo, por la presición no tan buena que este modelo tiene, podemos decir que el bias no es tan bajo y por ende, es medio.
+
